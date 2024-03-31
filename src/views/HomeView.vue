@@ -53,7 +53,7 @@ const previewCity = (searchResult) => {
         type="text"
         v-model="searchQuery"
         @input="getSearchResults"
-        placeholder="Seach for a city or state"
+        placeholder="Search for a city or state"
         class="py-2 px-2 w-full bg-transparent border-b focus:border-weather-secondary focus:outline-none focus:shadow-[0px_1px_0_0_#004E71]"
       />
       <ul
@@ -61,7 +61,7 @@ const previewCity = (searchResult) => {
         v-if="mapboxSearchResults"
       >
         <p class="py-2" v-if="searchError == true">
-          Sorry someing went wrong,please try again.
+          Sorry something went wrong,please try again.
         </p>
         <p class="py-2" v-if="!searchError && mapboxSearchResults.length === 0">
           No results match your query,please try again.

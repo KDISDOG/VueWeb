@@ -44,7 +44,7 @@
     </div>
     <hr class="border-white border-opacity-10 border w-full" />
     <!-- Hourly Weather -->
-    <div class="max-w-screen py-12 lg:px-48">
+    <div class="max-w-screen py-12 md:px-40 ">
       <div class="mx-8 text-white">
         <h2 class="mb-7">Hourly Weather</h2>
         <div class="flex gap-10 overflow-x-scroll">
@@ -73,7 +73,7 @@
 
     <hr class="border-white border-opacity-10 border w-full" />
     <!-- Weekly Weather -->
-    <div class="max-w-screen w-full py-12 lg:px-48">
+    <div class="max-w-screen w-full py-12 md:px-40">
       <div class="mx-8 text-white">
         <h2 class="mb-4">7 Day Forecast</h2>
 
