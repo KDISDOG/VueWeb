@@ -1,11 +1,10 @@
 <template>
   <div v-for="city in savedCities" :key="city.id">
-    <CityCard :city="city" />
+    <CityCard :city="city" @click="goToCityView(city)" />
   </div>
 
   <p v-if="savedCities.length === 0">
-    No locations added. To start tracking a location, search in
-    the field above.
+    No locations added. To start tracking a location, search in the field above.
   </p>
 </template>
 
@@ -18,9 +17,7 @@ import CityCard from "./CityCard.vue";
 const savedCities = ref([]);
 const getCities = async () => {
   if (localStorage.getItem("savedCities")) {
-    savedCities.value = JSON.parse(
-      localStorage.getItem("savedCities")
-    );
+    savedCities.value = JSON.parse(localStorage.getItem("savedCities"));
 
     const requests = [];
     savedCities.value.forEach((city) => {
